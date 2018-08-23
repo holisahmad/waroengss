@@ -16,10 +16,8 @@ class BeritaController extends Controller
      */
     public function index()
     {
-        $data = ModelBerita::all();
-        return view('berita::berita', compact('data'));
 
-        // return view('berita::berita');
+        return view('berita::berita');
     }
 
     public function dansos()
