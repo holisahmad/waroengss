@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/keluarga",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Keluarga\\Providers\\KeluargaServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Keluarga\\": ""
+        }
+    }
+}

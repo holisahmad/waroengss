@@ -1,0 +1,16 @@
+{
+    "name": "Karir",
+    "alias": "karir",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Karir\\Providers\\KarirServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

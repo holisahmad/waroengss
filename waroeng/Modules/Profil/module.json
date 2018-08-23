@@ -1,0 +1,16 @@
+{
+    "name": "Profil",
+    "alias": "profil",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Profil\\Providers\\ProfilServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}
