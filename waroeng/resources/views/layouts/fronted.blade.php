@@ -12,9 +12,9 @@
   {{--  <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.ico') }}">  --}}
 
   {{-- <!-- Fonts --> --}}
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100italic,100,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='{{ asset('assets/css/googlefont1.css') }}' rel='stylesheet' type='text/css'>
+  <link href='{{ asset('assets/css/googlefont2.css') }}' rel='stylesheet' type='text/css'>
+  <link href='{{ asset('assets/css/googlefont3.css') }}' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/style.css') }}" media="screen">
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}" media="screen">
@@ -139,7 +139,7 @@
   <script type="text/javascript" src="{{ asset('assets/js/tweetie.min.js') }}"></script>
 
   <!-- Google Map PopUp -->
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script type="text/javascript" src="{{ asset('assets/js/maps-api.js') }}"></script>
   <script type="text/javascript" src="{{ asset('assets/js/map-popup.js') }}"></script>
 
   <!-- Css Preseter -->

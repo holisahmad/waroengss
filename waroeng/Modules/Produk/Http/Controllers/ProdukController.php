@@ -27,6 +27,11 @@ class ProdukController extends Controller
         return view('produk::nasidos');
     }
 
+    public function kerjasama()
+    {
+        return view('produk::kerjasamaproduk');
+    }
+
     public function mitra()
     {
         return view('produk::mitra');

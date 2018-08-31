@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('home::home');
 });
 
+Route::get('/sitemap', 'SitemapController@index');
+
 Auth::routes();
 
 // // Route::get('/home', 'HomeController@index')->name('home');

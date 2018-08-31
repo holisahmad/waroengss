@@ -17,6 +17,41 @@ class KontakController extends Controller
         return view('kontak::index');
     }
 
+    public function bahanbaku()
+    {
+        return view('kontak::bahanbaku');
+    }
+
+    public function konsinyasi()
+    {
+        return view('kontak::konsinyasi');
+    }
+
+    public function kerjasamaevent()
+    {
+        return view('kontak::kerjasamaevent');
+    }
+
+    public function hotlineservice()
+    {
+        return view('kontak::hotlineservice');
+    }
+
+    public function hotlineorder()
+    {
+        return view('kontak::hotlineorder');
+    }
+
+    public function sponsorship()
+    {
+        return view('kontak::sponsorship');
+    }
+
+    public function cabang()
+    {
+        return view('kontak::kantorcabang');
+    }
+
     /**
      * Show the form for creating a new resource.
      * @return Response

@@ -2,6 +2,9 @@
 @section('title', 'Beranda Waroeng SS')
 @section('content')
 
+<script src="{{ asset('assets/loadmore/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/loadmore/bootstrap.min.js') }}"></script>
+
 <style>
 	  .strokeme
 {
@@ -19,10 +22,11 @@
 		-ms-transform:scale(1.3); /* IE 9 */
 		-o-transform:scale(1.3); /* Opera */
 		 transform:scale(1.3);
-	}
+    }
+
 	@font-face {
 		  font-family: "adlib";
-		  src: url('fonts/Adlib-Regular.ttf');
+		  src: url('assets/fonts/Adlib-Regular.ttf');
 	  }
 
 .animated {
@@ -53,6 +57,18 @@
 
 
 </style>
+
+{{--  <style>
+div.relative {
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+    width: 100%;
+    height: 10%;
+    {{--  border: 3px solid #73AD21;  --}}
+}
+</style>  --}}
+
 	<!-- START REVOLUTION SLIDER 3.1 rev5 fullwidth mode -->
 
 {{-- <div class="banner-wrapper reservation-banner"  style="background: url('{{ url('assets/img/header.png')}}')">
@@ -96,7 +112,7 @@
                 data-endeasing="Power1.easeIn"
                 data-captionhidden="off"
                 style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Merriweather', sans-serif; font-size: 33px; letter-spacing: 1px; font-style: italic; ">
-                <span> welcome to</span>
+                <span> Selamat Datang di</span>
             </div>
 
 			<!-- LAYER NR. 2 -->
@@ -109,7 +125,7 @@
 		      data-endspeed="300"
 		      data-endeasing="Power1.easeIn"
 		      data-captionhidden="off"
-		      style="z-index: 7; max-height: auto; white-space: nowrap;font-family : 'Playball', sans-serif; font-size: 93px; letter-spacing: 2px; color: #fff;">Urbangrill.
+		      style="z-index: 7; max-height: auto; white-space: nowrap;font-family : 'Playball', sans-serif; font-size: 93px; letter-spacing: 2px; color: #fff;">Waroeng SS.
             </div>
 
 			<!-- LAYER NR. 3 -->
@@ -122,7 +138,7 @@
 		      data-endspeed="300"
 		      data-endeasing="Power1.easeIn"
 		      data-captionhidden="off"
-		      style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Roboto', sans-serif; text-transform: uppercase; font-size: 18px; font-weight: 400; letter-spacing: 3px; color: #fff;">best quality food
+		      style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Roboto', sans-serif; text-transform: uppercase; font-size: 18px; font-weight: 400; letter-spacing: 3px; color: #fff;">menu dengan kualitas terbaik
 		    </div>
 
 			<!-- LAYER NR. 4 -->
@@ -293,64 +309,70 @@
 
 
 <!--===| Welcome Area Start===|-->
-<section style="margin-top: 1%;margin-bottom: 1%">
+<section class="welcome-area">
   <div class="container">
     <div class="row">
-
-      <div class="col-xs-12 col-md-4" style="background-color: cornsilk;box-shadow: 1vh 1vh 1vh grey">
+      <div class="col-xs-12 col-md-4">
         <div class="welcome-note text-center">
-        (<em>tempat profil perusahaan</em>)
-          <h1>Selamat Datang </h1>
-			<p class="note"><strong>di website resmi</strong></p>
+          <h1>Selamat Datang</h1>
+          <p class="note"><strong>di website resmi</strong></p>
           <h2 style="font-family: 'adlib';color: bisque;font-size: 180%" class="strokeme" >Waroeng SS</h2>
-
           <p>Waroeng Spesial Sambal SS berdiri pada tanggal 20 Agustus 2002 dan kini memiliki 85 cabang yang tersebar dari Banten hingga Bali</p>
-          <p>Waroeng pertama didirikan di barat Graha Saba Pramana UGM, dengan konsep waroeng tenda.</p>
+          <p>Waroeng pertama didirikan di barat Graha Saba Pramana UGM, dengan konsep waroeng tenda.<br>
+          Waroeng tersebut sampai saat ini masih tetap beroperasi, waroeng tersebut diberi nama <strong style="color:darkred">Waroeng Perjuangan</strong>.</p>
           <p id="animated-example" class="animated bounce"><i class="fa fa-arrow-circle-down"></i></p>
-			<p style="margin: 0"><em><small><a href="sejarah" ><font color="darkred">Klik untuk lihat selengkapnya</font></a></small></em></p>
+		  <em style="margin: 0"><small><a href="{{ url('profil/profil-waroeng-ss') }}" ><font color="darkred">Klik untuk lihat selengkapnya</font></a></small></em>
         </div>
       </div>
 
+       <div class="col-xs-12 col-md-8">
+          <div class="col-xs-12 col-sm-6 col-md-6 ">
+            <div class="grid">
+              <figure class="effect-cheff">
+                <img class="img-responsive" src="assets/img/4.png" alt="Food Welcome 1"/>
+                <div class="relative" style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>READ MORE</a>
+                </div>
+              </figure>
+            </div>
+          </div>
 
-		<div class="col-xs-12 col-md-8">
-        <div class="row" style="margin-bottom: 4%">
-          <div class="col-xs-12 col-sm-6  col-md-6 column-margin">
+        <div class="col-xs-12 col-sm-6 col-md-6 ">
             <div class="grid">
-              <figure class="effect-cheff soom" align="center" style="background-color: white;border: solid gainsboro;box-shadow: 1vh 1vh 1vh grey">
-                <img src="{{ asset('assets/img/3.png') }}" alt="Food Welcome 2" style="width: 80%" />
+              <figure class="effect-cheff">
+                <img class="img-responsive" src="assets/img/4.png" alt="Food Welcome 1"/>
+                <div class="relative" style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>READ MORE</a>
+                </div>
               </figure>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6  col-md-6 column-margin">
+
+        <div class="col-xs-12 col-sm-6 col-md-6 ">
             <div class="grid">
-              <figure class="effect-cheff soom" align="center" style="background-color: white;border: solid gainsboro;box-shadow: 1vh 1vh 1vh grey">
-              	<img src="{{ asset('assets/img/2.png') }}" width="50%" alt="Food Welcome 2" style="width: 80%" />
+              <figure class="effect-cheff">
+                <img class="img-responsive" src="assets/img/4.png" alt="Food Welcome 1"/>
+                <div class="relative" style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>READ MORE</a>
+                </div>
               </figure>
             </div>
           </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 ">
+            <div class="grid">
+              <figure class="effect-cheff">
+                <img class="img-responsive" src="assets/img/4.png" alt="Food Welcome 1"/>
+                <div class="relative" style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>READ MORE</a>
+                </div>
+              </figure>
+            </div>
+          </div>
+
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6  col-md-6 column-margin">
-            <div class="grid">
-              <figure class="effect-cheff soom" align="center" style="background-color: white;border: solid gainsboro;box-shadow: 1vh 1vh 1vh grey">
-                <img src="{{ asset('assets/img/1.png') }}"  width="50%" alt="Food Welcome 2" style="width: 80%" />
 
-              </figure>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 column-margin">
-            <div class="grid">
-              <figure class="effect-cheff soom" align="center" style="background-color: white;border: solid gainsboro;box-shadow: 1vh 1vh 1vh grey">
-              	<img src="{{ asset('assets/img/4.png') }}"  width="50%" alt="Food Welcome 2" style="width: 80%" />
-
-              </figure>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
 </section>
+
+
 <!--===| Welcome Area End===|-->
 
 
@@ -361,19 +383,18 @@
       <div class="row">
       <div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
         <h1>Pelayanan Kami</h1>
-        <p class="slogan">Fresh, Made by order</p>
+        <p class="slogan">Fresh, Made By Order </p>
           <ul id="myTab" class="nav nav-tabs">
             <li><a href="#tab-features" data-toggle="tab" aria-expanded="true"><i class="fa fa-wifi"></i><br>Tanpa Wifi</a></li>
             <li class="active"><a href="#extra" data-toggle="tab" aria-expanded="false"><i class="fa fa-taxi"></i><br>Free Parking</a></li>
             <li><a href="#home-delivery" data-toggle="tab" aria-expanded="false"><i class="fa fa-bicycle"></i><br>Home Delivery</a></li>
             <li><a href="#custom" data-toggle="tab" aria-expanded="false"><i class="fa fa-cubes"></i><br>Play ground</a></li>
-          </ul>
-          <div class="panel-group visible-xs" id="myTab-accordion"></div>
+          </ul><div class="panel-group visible-xs" id="myTab-accordion"></div>
           <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade" id="tab-features">
               <div class="row">
                 <div class="col-xs-12 col-md-10 col-md-offset-1">
-                  <h2><a href="#">Waroeng SS Tanpa Wifi</a></h2>
+                  <h2><a href="#">Urbangrill offers free wifi </a></h2>
                   <p>Enjoy free high-speed wifi. Simply click on Urbngrill wifi and ask any of our staff for login details. Now you can enjoy uninterrupted video streaming and downloads as much as you want...</p>
                   <a class="btn btn-default btn-link" href="#" role="button">view more</a>
                 </div>
@@ -389,7 +410,6 @@
                 </div>
               </div>
             </div>
-
             <div class="tab-pane fade active in" id="extra">
               <div class="row">
                 <div class="col-xs-12 col-md-10 col-md-offset-1">
@@ -399,7 +419,6 @@
                 </div>
               </div>
             </div>
-
             <div class="tab-pane fade" id="home-delivery">
               <div class="row">
                 <div class="col-xs-12 col-md-10 col-md-offset-1">
@@ -422,7 +441,6 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-        (<em>tempat produk layanan</em>)
           <h1>food menu</h1>
           <p class="slogan">fresh and healthy food available</p>
         </div>
@@ -431,65 +449,69 @@
       <div class="row">
         <div class="gallery-trigger">
           <ul id="filter">
-           <li><a class="active" href="#" data-group="total">all</a></li>
-           <li><a href="#" data-group="appetizer">appetizer</a></li>
-           <li><a href="#" data-group="main-course">main-course</a></li>
-           <li><a href="#" data-group="desserts">desserts</a></li>
+           <li><a href="#" data-group="sambal">Sambal</a></li>
+           <li><a href="#" data-group="lauk">Lauk</a></li>
+           <li><a href="#" data-group="sayur">Sayur</a></li>
+           <li><a href="#" data-group="minuman">Minuman</a></li>
+           <li><a href="#" data-group="buah">Buah</a></li>
+           <li><a href="#" data-group="paket">Paket</a></li>
+           <li><a href="#" data-group="catering">Catering</a></li>
+           <li><a class="active" href="#" data-group="semua">Semua</a></li>
          </ul>
        </div>
 
        <div id="grid">
         <!-- menu-item -->
-        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3" data-groups='["total", "appetizer"]'>
+        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3 blogBox moreBox" data-groups='["semua", "sambal"]'>
           <div class="menu-index">
             <h2>ORGANIC EGG</h2>
             <img src="http://placehold.it/210x125" alt="appetizer 01">
             <P>Ratte potato, chorizo iberico<span>$15.00</span></P>
           </div>
         </div>
-        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3" data-groups='["total", "appetizer"]'>
+        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3 blogBox moreBox" data-groups='["semua", "lauk"]'>
           <div class="menu-index">
             <h2>Southern Salad</h2>
             <img src="http://placehold.it/210x125" alt="appetizer 02">
             <P>Premium Bacon Ranch Chicken Salad<span>$35.00</span></P>
           </div>
         </div>
-        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3" data-groups='["total", "desserts"]'>
+        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3 blogBox moreBox" data-groups='["semua", "sayur"]'>
           <div class="menu-index">
             <h2>Prime PINEAPPLE</h2>
             <img src="http://placehold.it/210x125" alt="Desserts 02">
             <P>Coconut sablé, fromage<span>$28.00</span></P>
           </div>
         </div>
-        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3" data-groups='["total", "main-course"]'>
+        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3 blogBox moreBox" data-groups='["semua", "minuman"]'>
           <div class="menu-index">
             <h2>RAINBOW TROUT</h2>
             <img src="http://placehold.it/210x125" alt="Main Course 01">
             <P>Kurobuta pork, miso caramel, yuzu<span>$39.00</span></P>
           </div>
         </div>
-        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3" data-groups='["total", "main-course"]'>
+        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3 blogBox moreBox  style="display: none;" data-groups='["semua", "buah"]'>
           <div class="menu-index">
             <h2>BEETROOT</h2>
             <img src="http://placehold.it/210x125" alt="Main Course 02">
             <P>‘Burrata artigiana’, honeycomb<span>$61.00</span></P>
           </div>
         </div>
-        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3" data-groups='["total",  "desserts"]'>
+        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3 blogBox moreBox  style="display: none;" data-groups='["semua",  "paket"]'>
           <div class="menu-index">
             <h2>Nutty GRAND</h2>
             <img src="http://placehold.it/210x125" alt="Desserts 01">
             <P>Tastes & textures, horseradish<span>$24.00</span></P>
           </div>
         </div>
-        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3" data-groups='["total", "main-course"]'>
+        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3 blogBox moreBox  style="display: none;" data-groups='["semua", "catering"]'>
           <div class="menu-index">
             <h2>CONFIT TROUT</h2>
             <img src="http://placehold.it/210x125" alt="Main Course 03">
             <P>Kurobuta pork, miso caramel, yuzu<span>$39.00</span></P>
           </div>
         </div>
-        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3" data-groups='["total", "appetizer"]'>
+        <div class="portfolio-item col-xs-12 col-sm-4 col-md-4 col-lg-3 blogBox moreBox  style="display: none;" data-groups='["semua", "catering"]'>
           <div class="menu-index">
             <h2>Bacon Salad </h2>
             <img src="http://placehold.it/210x125" alt="Appetizer 03">
@@ -498,21 +520,19 @@
         </div>
       </div> <!-- grid -->
       <div class="load-button text-center">
-        <button class="btn" name="submit" type="submit">load more</button>
+        <button id="loadMore" class="btn" name="submit" type="submit">load more</button>
       </div>
     </div><!-- row -->
   </div><!-- container -->
 </section>
+
   <!--==| Food Menu End |==-->
-
-
 
 <!--===| Event Start|===-->
 <section class="event-wrapper section-padding">
   <div class="container">
     <div class="row">
         <div class="col-xs-12">
-        (<em>tempat berita</em>)
           <h1>event</h1>
           <p class="slogan">fresh and healthy food available</p>
         </div>
@@ -831,5 +851,21 @@
     </div>
   </section>
   <!--====| Gallery End |====-->
+
+<script>
+$( document ).ready(function () {
+		$(".moreBox").slice(0, 4).show();
+		if ($(".blogBox:hidden").length != 0) {
+			$("#loadMore").show();
+		}
+		$("#loadMore").on('click', function (e) {
+			e.preventDefault();
+			$(".moreBox:hidden").slice(0, 4).slideDown();
+			if ($(".moreBox:hidden").length == 0) {
+				$("#loadMore").fadeOut('slow');
+			}
+		});
+	});
+</script>
 
 @endsection
