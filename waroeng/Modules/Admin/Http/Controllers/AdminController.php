@@ -17,107 +17,128 @@ class AdminController extends Controller
     }
 
     public function profil(){
+        $crumb = 'Master';
         $subcrumb = 'Profil';
-        return view('admin::master.profil', ['subcrumb' => $subcrumb]);
+        return view('admin::master.profil', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
 
     public function produk(){
+        $crumb = 'Master';
         $subcrumb = 'Produk dan Layanan';
-        return view('admin::master.produklayanan', ['subcrumb' => $subcrumb]);
+        return view('admin::master.produklayanan', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
 
     public function karir(){
+        $crumb = 'Master';
         $subcrumb = 'Karir';
-        return view('admin::master.karir', ['subcrumb' => $subcrumb]);
+        return view('admin::master.karir', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
 
     public function berita(){
+        $crumb = 'Master';
         $subcrumb = 'Berita';
-        return view('admin::master.berita', ['subcrumb' => $subcrumb]);
+        return view('admin::master.berita', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
     
     public function sejarah(){
+        $crumb = 'Profil';
         $subcrumb = 'Sejarah dan Perkembangan';
-        return view('admin::profil.sejarahss', ['subcrumb' => $subcrumb]);
+        return view('admin::profil.sejarahss', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
 
     public function visimisi(){
+        $crumb = 'Profil';
         $subcrumb = 'Visi dan Misi';
-        return view('admin::profil.visimisiss', ['subcrumb' => $subcrumb]);
+        return view('admin::profil.visimisiss', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
 
     public function profilss(){
+        $crumb = 'Profil';
         $subcrumb = 'Profil Perusahaan';
-        return view('admin::profil.profilss', ['subcrumb' => $subcrumb]);
+        return view('admin::profil.profilss', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
     public function jajaran(){
+        $crumb = 'Profil';
         $subcrumb = 'Jajaran Tinggi Manajemen';
-        return view('admin::profil.jajarantinggiss', ['subcrumb' => $subcrumb]);
+        return view('admin::profil.jajarantinggiss', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
 
     public function galeri(){
+        $crumb = 'Profil';
         $subcrumb = 'Galeri dan Info Waroeng';
-        return view('admin::profil.galeriwaroeng', ['subcrumb' => $subcrumb]);
+        return view('admin::profil.galeriwaroeng', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
 
     public function menu(){
+        $crumb = 'Profil';
         $subcrumb = 'Daftar Menu';
-        return view('admin::profil.daftarmenuss', ['subcrumb' => $subcrumb]);
+        return view('admin::profil.daftarmenuss', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
     
     public function takeaway(){
+        $crumb = 'Profil';
         $subcrumb = 'Layanan Take Away';
-        return view('admin::profil.takeawayss', ['subcrumb' => $subcrumb]);
+        return view('admin::profil.takeawayss', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
     
     public function nasidos(){
+        $crumb = 'Profil';
         $subcrumb = 'layanan Nasi Dos';
-        return view('admin::profil.nasidosss', ['subcrumb' => $subcrumb]);
+        return view('admin::profil.nasidosss', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
     
     public function kerjasama(){
+        $crumb = 'Profil';
         $subcrumb = 'Layanan Kerjasama Produk';
-        return view('admin::profil.kerjasamaprodukss', ['subcrumb' => $subcrumb]);
+        return view('admin::profil.kerjasamaprodukss', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
     
     public function mitra(){
+        $crumb = 'Profil';
         $subcrumb = 'Produk Mitra';
-        return view('admin::profil.produkmitra', ['subcrumb' => $subcrumb]);
+        return view('admin::profil.produkmitra', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
     
     public function karirss(){
+        $crumb = 'Karir';
         $subcrumb = 'Karir';
-        return view('admin::profil.karirss', ['subcrumb' => $subcrumb]);
+        return view('admin::profil.karirss', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
     
     public function beritass(){
+        $crumb = 'Berita';
         $subcrumb = 'Berita Perusahaan';
-        return view('admin::berita.beritaperusahaan', ['subcrumb' => $subcrumb]);
+        return view('admin::berita.beritaperusahaan', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
     
     public function dansos(){
+        $crumb = 'Berita';
         $subcrumb = 'Penyaluran Dana Sosial';
-        return view('admin::berita.dansos', ['subcrumb' => $subcrumb]);
+        return view('admin::berita.dansos', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
     
     public function promo(){
+        $crumb = 'Berita';
         $subcrumb = 'Promosi Produk dan Layanan';
-        return view('admin::berita.promosi', ['subcrumb' => $subcrumb]);
+        return view('admin::berita.promosi', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
     
     public function eventkerjasama(){
+        $crumb = 'Berita';
         $subcrumb = 'Event Kerjasama Khusus';
-        return view('admin::berita.eventkerjasama', ['subcrumb' => $subcrumb]);
+        return view('admin::berita.eventkerjasama', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
     
     public function nikmat(){
+        $crumb = 'Berita';
         $subcrumb = 'Berita Nikmat';
-        return view('admin::berita.beritanikmat', ['subcrumb' => $subcrumb]);
+        return view('admin::berita.beritanikmat', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
     
     public function medsil(){
+        $crumb = 'Berita';
         $subcrumb = 'Media Silaturrahmi';
-        return view('admin::berita.medsil', ['subcrumb' => $subcrumb]);
+        return view('admin::berita.medsil', ['crumb' => $crumb,'subcrumb' => $subcrumb]);
     }
 
     /**

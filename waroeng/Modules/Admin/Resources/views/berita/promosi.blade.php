@@ -1,6 +1,6 @@
 @extends('admin::layouts.master')
-@section('title', 'Sejarah & Perkembangan Waroeng SS')
-@section('judul', 'Sejarah & Perkembangan')
+@section('title', 'Promosi Produk dan Layanan Waroeng SS')
+@section('judul', 'Promosi Produk dan Layanan')
 @section('subjudul', 'Waroeng SS')
 
 @section('content')
@@ -11,7 +11,7 @@
             <i class="fa fa-circle"></i>
         </li>
         <li>
-            <a href="#">Master</a>
+            <a href="javascript:;">{{ $crumb }}</a>
             <i class="fa fa-circle"></i>
         </li>
         <li>

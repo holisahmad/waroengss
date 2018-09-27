@@ -11,7 +11,7 @@
             <i class="fa fa-circle"></i>
         </li>
         <li>
-            <a href="javascript:;">Master</a>
+            <a href="javascript:;">{{ $crumb }}</a>
             <i class="fa fa-circle"></i>
         </li>
         <li>
