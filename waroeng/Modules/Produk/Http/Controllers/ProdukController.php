@@ -14,27 +14,47 @@ class ProdukController extends Controller
      */
     public function index()
     {
-        return view('produk::produk');
+        $title      = 'Daftar Menu Waroeng SS';
+        $judul      = 'Daftar Menu';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('produk::produk', ['title'=>$title, 'judul'=>$judul, 'subjudul' => $subjudul]);
     }
 
     public function bungkus()
     {
-        return view('produk::bungkus');
+        $title      = 'Layanan Take Away Waroeng SS';
+        $judul      = 'Layanan Take Away';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('produk::bungkus', ['title'=>$title, 'judul'=>$judul, 'subjudul' => $subjudul]);
     }
 
     public function nasidos()
     {
-        return view('produk::nasidos');
+        $title      = 'Layanan Nasi Dos Waroeng SS';
+        $judul      = 'Layanan Nasi Dos';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('produk::nasidos', ['title'=>$title, 'judul'=>$judul, 'subjudul' => $subjudul]);
     }
 
     public function kerjasama()
     {
-        return view('produk::kerjasamaproduk');
+        $title      = 'Layanan Kerjasama Produk Waroeng SS';
+        $judul      = 'Layanan Kerjasama Produk';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('produk::kerjasamaproduk', ['title'=>$title, 'judul'=>$judul, 'subjudul' => $subjudul]);
     }
 
     public function mitra()
     {
-        return view('produk::mitra');
+        $title      = 'Produk - produk Mitra Waroeng SS';
+        $judul      = 'Produk Mitra';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('produk::mitra', ['title'=>$title, 'judul'=>$judul, 'subjudul' => $subjudul]);
     }
 
     /**

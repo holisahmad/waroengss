@@ -1,21 +1,6 @@
-@extends('layouts.fronted')
-@section('title', 'Daftar Menu Waroeng SS')
-@section('content')
+@extends('home::layouts.master')
 
- <!--===| About Us Banner Start|===-->
-  <section class="banner-wrapper about-banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>Daftar Menu</h1>
-          <p>Waroeng Spesial Sambal SS</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--===| About Us Banner End|===-->
-
-
+@section('isi')
 
 <!--===| Menu Page First Block Start |===-->
 <section class="menu-block first-section">
@@ -307,7 +292,7 @@
     <div class="col-xs-12">
       <div class="top-icon">
         <img src="http://placehold.it/239x159" alt="Drinks">
-      <h1 class="text-center">Drinks</h1>
+      <h1 class="text-center">Minuman</h1>
       </div>
     </div>
       <div class="col-xs-12 col-md-6">

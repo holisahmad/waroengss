@@ -1,20 +1,6 @@
-@extends('layouts.fronted')
-@section('title', 'Jajaran Tinggi Manajemen Waroeng SS')
-@section('content')
+@extends('home::layouts.master')
 
-  <!--===| About Us Banner Start|===-->
-  <section class="banner-wrapper about-banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>Jajaran Tinggi Manajemen</h1>
-          <p>Waroeng Spesial Sambal SS</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--===| About Us Banner End|===-->
-
+@section('isi')
 
   <!--===| Our Team Start|===-->
   <section class="section-padding our-team-section">

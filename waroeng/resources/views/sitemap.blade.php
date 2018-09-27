@@ -51,11 +51,10 @@
                     <p class="slogan" style="text-align: left"><br><Strong>Berita</Strong></p>
                     <ul>
                         <li><a href="#" style="font-size: unset">Berita Perusahaan</a></li>
-                        <li><a href="#" style="font-size: unset">Penyaluran Dana Sosial (CSR) & Genggam Jemari Indonesia</a></li>
-                        <li><a href="#" style="font-size: unset">Produk dan Layanan</a></li>
+                        <li><a href="#" style="font-size: unset">Penyaluran Dana Sosial (CSR)</a></li>
+                        <li><a href="#" style="font-size: unset">Promosi Produk dan Layanan</a></li>
                         <li><a href="#" style="font-size: unset">Event Kerjasama Khusus</a></li>
                         <li><a href="#" style="font-size: unset">Berita Nikmat</a></li>
-                        <li><a href="#" style="font-size: unset">Keluarga Penebar Pedas (Medsil)</a></li>
                     </ul>
                 </div>
             </div>
@@ -79,8 +78,8 @@
                         <li><a href="#" style="font-size: unset">Kerjasama Event</a></li>
                         <li><a href="#" style="font-size: unset">Hotline Service</a></li>
                         <li><a href="#" style="font-size: unset">Hotline Order</a></li>
-                        <li><a href="#" style="font-size: unset">Sponsorship Event</a></li>
-                        <li><a href="#" style="font-size: unset">Kantor Cabang</a></li>
+                        <li><a href="#" style="font-size: unset">Event dan Sponsorship</a></li>
+                        <li><a href="#" style="font-size: unset">Kantor Pusat dan Cabang</a></li>
                     </ul>
                 </div>
             </div>

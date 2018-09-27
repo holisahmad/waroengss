@@ -1,55 +1,66 @@
-@extends('layouts.fronted')
-@section('title', 'Daftar Kontak dan Alamat Waroeng SS')
-@section('content')
+@extends('home::layouts.master')
 
-<style>
-.animated {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-}
+@section('isi')
 
-@-webkit-keyframes bounce {
-  0%, 20%, 40%, 60%, 80%, 100% {-webkit-transform: translateY(0);}
-  50% {-webkit-transform: translateY(-10px);}
-}
-
-@keyframes bounce {
-  0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
-  50% {transform: translateY(-10px);}
-}
-
-.bounce {
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-}
-</style>
-
-  <!--===| About Us Banner Start|===-->
-  <section class="banner-wrapper about-banner" style=" background: url('{{ url('assets/img/1600x339.png')}}'); padding: 140px 0; background-size: cover; background-position: center center;">
-  {{--  <section class="banner-wrapper about-banner" style=" background: url('{{ url('assets/img/header_kontak.jpg')}}'); padding: 140px 0; background-size: cover; background-position: center center;-moz-box-shadow: inset 0 0 1vh 1vh white; -webkit-box-shadow: inset 0 0 1vh 1vh white; box-shadow: inset 0 0 1vh 1vh white;">  --}}
+<!--==| Reservation Top Section Start |==-->
+  <section class="section-padding reservation-top-section">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
-          <h1>Kontak</h1>
-          <p>Waroeng Spesial Sambal SS</p>
+        <div class="col-sm-6 col-xs-12">
+          <div id="reservation-slider" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#reservation-slider" data-slide-to="0" class="active"></li>
+              <li data-target="#reservation-slider" data-slide-to="1"></li>
+              <li data-target="#reservation-slider" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="{{ asset('assets/img/book-table.jpg') }}" alt="Gambar BB Waroeng SS 01">
+              </div>
+              <div class="item">
+                <img src="{{ asset('assets/img/testimonial2.jpg') }}" alt="Gambar BB Waroeng SS 02">
+              </div>
+              <div class="item">
+                <img src="{{ asset('assets/img/testimonial.jpg') }}" alt="Gambar BB Waroeng SS 03">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+           <h2 class="text-left">Pengadaan Bahan Baku</h2>
+        <p class="slogan">Bagaimana cara melakukan kerjasama</p>
+        <p>We recommend that you make a reservation in advance. Please uses our on-line reservations system If there are seats available, we will be more than happy to welcome you on the same day. So please, dont hesitate to contact us.</p>
+        <p>Praesent rhoncus quam sapien, vitae malesuada metus mollis non. pharetra varius risus. Donec quis mi facilisis, gravida elit in, rutrum turpis. </p>
         </div>
       </div>
     </div>
-  </section>
 
-<div class="col-md-12">
-	<div class="row">
-		<div class="col-md-6">
-
-		</div>
+  <!--==| Events Content Start|==-->
+	<div class="container">
+        <div class="categories archive">
+            <h3 class="h3">Kontak Indonesia: </h3>
+            <ul class="list-unstyled">
+            <li><i class="fa fa-phone-square"></i> Pengadaan Yogyakarta (Pusat): <a href="tel:6281391515363">081391515363</a></li>
+            <li><i class="fa fa-phone-square"></i> Pengadaan Jabotabek  (Cabang): <a href="tel:6281391515363">081391515363</a></li>
+            <li><i class="fa fa-phone-square"></i> Pengadaan Purwokerto (Cabang): <a href="tel:6281391515363">081391515363</a></li>
+            <li><i class="fa fa-phone-square"></i> Pengadaan Semarang (Cabang): <a href="tel:6281391515363">081391515363</a></li>
+            <li><i class="fa fa-phone-square"></i> Pengadaan Solo (Cabang): <a href="tel:6281391515363">081391515363</a></li>
+            <li><i class="fa fa-phone-square"></i> Pengadaan Malang (Cabang): <a href="tel:6281391515363">081391515363</a></li>
+            <li><i class="fa fa-phone-square"></i> Pengadaan Bali (Cabang): <a href="tel:6281391515363">081391515363</a></li>
+            </ul>
+        </div>
+        <div class="categories archive">
+                <h3 class="h3">Kontak Malaysia: </h3>
+                <ul class="list-unstyled">
+                <li><i class="fa fa-phone-square"></i> Pengadaan Kuala Lumpur (Cabang): <a href="tel:6281391515363">081391515363</a></li>
+                </ul>
+            </div>
 	</div>
-</div>
-
+    
+</section>
+<!--==| Events Content End|==-->
 
 @endsection

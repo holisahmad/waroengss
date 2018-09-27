@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/sitemap', 'SitemapController@index');
+//Route::get('users', 'Api/UserController@index');
 
 Auth::routes();
 

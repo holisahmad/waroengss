@@ -19,12 +19,22 @@ class KarirController extends Controller
 
     public function manajemen()
     {
-        return view('karir::manajemen');
+        $title      = 'Info Karir - Lowongan Kerja Manajemen Waroeng SS';
+        $judul      = 'Lowongan Kerja Manajemen';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('karir::manajemen', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
+
     }
 
     public function waroeng()
     {
-        return view('karir::waroeng');
+        $title      = 'Info Karir - Lowongan Kerja Waroeng SS';
+        $judul      = 'Lowongan Kerja Waroeng';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('karir::waroeng', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
+
     }
 
     /**

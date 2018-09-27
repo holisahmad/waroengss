@@ -26,7 +26,7 @@
 
 	@font-face {
 		  font-family: "adlib";
-		  src: url('assets/fonts/Adlib-Regular.ttf');
+		  src: url({{ asset('assets/fonts/Adlib-Regular.ttf') }});
 	  }
 
 .animated {
@@ -58,250 +58,203 @@
 
 </style>
 
-{{--  <style>
+<style>
 div.relative {
     position: absolute;
     bottom: 10px;
     left: 90px;
     width: 100%;
     height: 10%;
-    {{--  border: 3px solid #73AD21;  --}}
-}
-</style>  --}}
+    {{--  border:3pxsolid#73AD21;  --}}
 
-	<!-- START REVOLUTION SLIDER 3.1 rev5 fullwidth mode -->
-
-{{-- <div class="banner-wrapper reservation-banner"  style="background: url('{{ url('assets/img/header.png')}}')">
-<!-- <div class="banner-wrapper reservation-banner"  style="background: url(img/header.png)"> -->
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>Beranda</h1>
-          <p>Waroeng SS</p>
-        </div>
-      </div>
-    </div>
-  </div> --}}
-
-  <!--
-	#################################
-		- THEMEPUNCH BANNER -
-	#################################
-	-->
-	<!-- START REVOLUTION SLIDER 3.1 rev5 fullwidth mode -->
+</style>
 
 	<div class="tp-banner-container">
 		<div class="tp-banner" >
 			<ul>
+                <!-- Slider One  -->
+                <li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="1000" data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-title="Nasi Dos">
+                    <!-- MAIN IMAGE -->
+                    <img src="{{ asset('assets/img/bg-1600x339px-3.png') }}"  alt="slidebg1"  data-lazyload="{{ asset('assets/img/bg-1600x339px-3.png') }}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
 
-			<!-- Slider One -->
-			<li data-transition="slotfade-horizontal" data-slotamount="1" data-masterspeed="100" data-title="Waroeng SS">
-		    <!-- MAIN IMAGE -->
-            <img src="{{ asset('assets/img/bg-1600x339px.png') }}"  alt="slidebg1" data-lazyload="{{ asset('assets/img/bg-1600x339px.png') }}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-resizeme sft start"
+                        {{--  data-hoffset="0"  --}}
+                        data-x="590"
+                        data-y="115"
+                        data-speed="2000"
+                        data-start="2000"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="300"
+                        data-endeasing="Power1.easeIn"
+                        data-captionhidden="off"
+                        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Merriweather', sans-serif; font-size: 33px; font-style: italic; text-transform:capitalize; font-weight:400;">
+                        <span>Layanan kami</span>
+                    </div>
 
-		    <!-- LAYERS -->
-			<!-- LAYER NR. 1 -->
-		    <div class="tp-caption tp-resizeme sft start"
-                data-hoffset="0"
-                data-x="905"
-                data-y="110"
-                data-speed="2000"
-                data-start="2000"
-                data-easing="Power4.easeOut"
-                data-endspeed="300"
-                data-endeasing="Power1.easeIn"
-                data-captionhidden="off"
-                style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Merriweather', sans-serif; font-size: 33px; letter-spacing: 1px; font-style: italic; ">
-                <span> Selamat Datang di</span>
-            </div>
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption tp-resizeme sft"
+                        data-x="360"
+                        data-y="170"
+                        data-speed="1000"
+                        data-start="2400"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="300"
+                        data-endeasing="Power1.easeIn"
+                        data-captionhidden="off"
+                        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap; font-family : 'Kalam', cursive; font-size: 76px; color: #fff;">Catering Nasi Dos
+                    </div>
 
-			<!-- LAYER NR. 2 -->
-		    <div class="tp-caption tp-resizeme sft"
-		      data-x="760"
-		      data-y="150"
-		      data-speed="1000"
-		      data-start="2400"
-		      data-easing="Power4.easeOut"
-		      data-endspeed="300"
-		      data-endeasing="Power1.easeIn"
-		      data-captionhidden="off"
-		      style="z-index: 7; max-height: auto; white-space: nowrap;font-family : 'Playball', sans-serif; font-size: 93px; letter-spacing: 2px; color: #fff;">Waroeng SS.
-            </div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption tp-resizeme sft"
+                        data-x="390"
+                        data-y="235"
+                        data-speed="1000"
+                        data-start="2700"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="300"
+                        data-endeasing="Power1.easeIn"
+                        data-captionhidden="off"
+                        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Roboto', sans-serif;text-transform: uppercase; font-size: 16px;letter-spacing: 4px; color: #fff;">kami juga melayani catering nasi dos
+                    </div>
 
-			<!-- LAYER NR. 3 -->
-		    <div class="tp-caption tp-resizeme sft"
-		      data-x="875"
-		      data-y="219"
-		      data-speed="1000"
-		      data-start="2700"
-		      data-easing="Power4.easeOut"
-		      data-endspeed="300"
-		      data-endeasing="Power1.easeIn"
-		      data-captionhidden="off"
-		      style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Roboto', sans-serif; text-transform: uppercase; font-size: 18px; font-weight: 400; letter-spacing: 3px; color: #fff;">menu dengan kualitas terbaik
-		    </div>
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption tp-resizeme sft"
+                        data-x="center"
+                        data-y="280"
+                        data-speed="1000"
+                        data-start="3000"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="300"
+                        data-endeasing="Power1.easeIn"
+                        data-captionhidden="off"
+                        style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>lihat detail</a>
+                    </div>
+                </li>
 
-			<!-- LAYER NR. 4 -->
-		    <div class="tp-caption tp-resizeme sft"
-		      data-x="910"
-		      data-y="270"
-		      data-speed="1000"
-		      data-start="3000"
-		      data-easing="Power3.easeInOut"
-		      data-splitin="none"
-		      data-splitout="none"
-		      data-elementdelay="0.1"
-		      data-endelementdelay="0.1"
-		      data-linktoslide="next"
-		      style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>READ MORE</a>
-		    </div>
-		  </li>
+                <!-- Slider Two  -->
+                <li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="1000"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-title="Ceriakan September">
+                    <!-- MAIN IMAGE -->
+                    <img src="{{ asset('assets/img/bg-1600x339px-2.png') }}"  alt="Waroeng SS Indonesia"  data-lazyload="{{ asset('assets/img/bg-1600x339px-2.png') }}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
 
-			<!-- Slider Two  -->
-			<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="1000"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-title="Waroeng SS">
-			<!-- MAIN IMAGE -->
-            <img src="{{ asset('assets/img/bg-1600x339px-2.png') }}"  alt="Waroeng SS Indonesia"  data-lazyload="{{ asset('assets/img/bg-1600x339px-2.png') }}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-resizeme sft start"
+                        data-x="590"
+                        data-y="115"
+                        data-speed="2000"
+                        data-start="2000"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="300"
+                        data-endeasing="Power1.easeIn"
+                        data-captionhidden="off"
+                        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Merriweather', sans-serif; font-size: 33px; font-style: italic;text-transform:capitalize;font-weight:400;"><span>Rekomendasi</span>
+                    </div>
 
-			<!-- LAYERS -->
-			{{--  <!-- LAYER NR. 1 -->
-			<div class="tp-caption tp-fade fadeout fullscreenvideo"
-				data-x="0"
-				data-y="0"
-				data-speed="1000"
-				data-start="1100"
-				data-easing="Power4.easeOut"
-				data-endspeed="1500"
-				data-endeasing="Power4.easeIn"
-				data-autoplay="true"
-				data-autoplayonlyfirsttime="false"
-				data-nextslideatend="true"
-				data-forceCover="1"
-				data-dottedoverlay="twoxtwo"
-				data-aspectratio="16:9"
-				data-forcerewind="on"
-				style="z-index: 2">
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption tp-resizeme sft"
+                        data-x="360"
+                        data-y="170"
+                        data-speed="1000"
+                        data-start="2400"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="300"
+                        data-endeasing="Power1.easeIn"
+                        data-captionhidden="off"
+                        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;font-family : 'Kalam', cursive; font-size: 76px; color: #fff;">Ceriakan September
+                    </div>
 
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption tp-resizeme sft"
+                        data-x="390"
+                        data-y="235"
+                        data-speed="1000"
+                        data-start="2700"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="300"
+                        data-endeasing="Power1.easeIn"
+                        data-captionhidden="off"
+                        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Roboto', sans-serif;text-transform: uppercase; font-size: 16px;letter-spacing: 4px; color: #fff;">Yuk segera kunjungi Waroeng SS terdekat
+                    </div>
 
-			<video class="video-js vjs-default-skin" preload="none" width="100%" height="100%"
-			poster='{{ asset('assets/video/urbangrill.jpg') }}' >
-			<source src='{{ asset('assets/video/urbangrill.mp4') }}' type='video/mp4' />
-			<source src='{{ asset('assets/video/urbangrill.webm') }}' type='video/webm' />
-			<source src='{{ asset('assets/video/urbangrill.ogv') }}' type='video/ogg' />
-			</video>
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption tp-resizeme sft"
+                        data-x="center"
+                        data-y="280"
+                        data-speed="1000"
+                        data-start="3000"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="300"
+                        data-endeasing="Power1.easeIn"
+                        data-captionhidden="off"
+                        style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>lihat detail</a>
+                    </div>
+                </li>
 
-			</div>  --}}
+                <!-- Slider Three  -->
+                <li data-transition="slotfade-horizontal" data-slotamount="1" data-masterspeed="100" data-title="Berita Nikmat">
+                    <!-- MAIN IMAGE -->
+                    <img src="{{ asset('assets/img/bg-1600x339px.png') }}"  alt="slidebg1"  data-lazyload="{{ asset('assets/img/bg-1600x339px.png') }}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
-		  <!-- LAYER NR. 1 -->
-	      <div class="tp-caption tp-resizeme sft start"
-	        data-x="590"
-	        data-y="115"
-	        data-speed="2000"
-	        data-start="2000"
-	        data-easing="Power4.easeOut"
-	        data-endspeed="300"
-	        data-endeasing="Power1.easeIn"
-	        data-captionhidden="off"
-	        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Merriweather', sans-serif; font-size: 33px; font-style: italic;text-transform:capitalize;font-weight:400;"><span>We take our</span>
-          </div>
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-resizeme sft start"
+                        data-x="590"
+                        data-y="115"
+                        data-speed="2000"
+                        data-start="2000"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="300"
+                        data-endeasing="Power1.easeIn"
+                        data-captionhidden="off"
+                        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Merriweather', sans-serif; font-size: 33px; font-style: italic;">
+                        <span>Berita huuhaah</span>
+                    </div>
 
-	      <!-- LAYER NR. 2 -->
-	      <div class="tp-caption tp-resizeme sft"
-	        data-x="360"
-	        data-y="170"
-	        data-speed="1000"
-	        data-start="2400"
-	        data-easing="Power4.easeOut"
-	        data-endspeed="300"
-	        data-endeasing="Power1.easeIn"
-	        data-captionhidden="off"
-	        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;font-family : 'Playball', sans-serif;font-size: 91px; color: #fff;">Responsibilities
-          </div>
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption tp-resizeme sft"
+                        data-x="360"
+                        data-y="170"
+                        data-speed="1000"
+                        data-start="2400"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="300"
+                        data-endeasing="Power1.easeIn"
+                        data-captionhidden="off"
+                        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap; font-family : 'Kalam', cursive; font-size: 76px; letter-spacing: 3px; color: #fff;">Berita Nikmat
+                    </div>
 
-	      <!-- LAYER NR. 3 -->
-	      <div class="tp-caption tp-resizeme sft"
-	        data-x="390"
-	        data-y="235"
-	        data-speed="1000"
-	        data-start="2700"
-	        data-easing="Power4.easeOut"
-	        data-endspeed="300"
-	        data-endeasing="Power1.easeIn"
-	        data-captionhidden="off"
-	        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Roboto', sans-serif;text-transform: uppercase; font-size: 14px;letter-spacing: 4px; color: #fff;">very seriously – from the environment
-          </div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption tp-resizeme sft"
+                        data-x="390"
+                        data-y="235"
+                        data-speed="1000"
+                        data-start="2700"
+                        data-easing="Power4.easeOut"
+                        data-endspeed="300"
+                        data-endeasing="Power1.easeIn"
+                        data-captionhidden="off"
+                        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Roboto', sans-serif;text-transform: uppercase; font-size: 16px; letter-spacing: 3px; color: #fff;">info-info ringan seputar SS untuk menemani Bigboss
+                    </div>
 
-	      <!-- LAYER NR. 4 -->
-	      <div class="tp-caption tp-resizeme sft"
-	        data-x="center"
-	        data-y="280"
-	        data-speed="1000"
-	        data-start="3000"
-	        data-easing="Power4.easeOut"
-	        data-endspeed="300"
-	        data-endeasing="Power1.easeIn"
-	        data-captionhidden="off"
-	        style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>Book a Table Now</a>
-	      </div>
-		</li>
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption tp-resizeme sft"
+                        data-x="center"
+                        data-y="280"
+                        data-speed="1000"
+                        data-start="3000"
+                        data-easing="Power3.easeOut"
+                        data-splitin="none"
+                        data-splitout="none"
+                        data-elementdelay="0.1"
+                        data-endelementdelay="0.1"
+                        data-linktoslide="next"
+                        style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>lihat detail</a>
+                    </div>
+                </li>
 
-            <!-- Slider Three -->
-            <li data-transition="slotfade-horizontal" data-slotamount="1" data-masterspeed="100" data-title="Waroeng SS">
-            <!-- MAIN IMAGE -->
-		   <img src="{{ asset('assets/img/bg-1600x339px-3.png') }}"  alt="slidebg1" data-lazyload="{{ asset('assets/img/bg-1600x339px-3.png') }}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-		      <!-- LAYER NR. 1 -->
-		      <div class="tp-caption tp-resizeme sft start"
-		        data-x="800"
-		        data-y="110"
-		        data-speed="2000"
-		        data-start="2000"
-		        data-easing="Power4.easeOut"
-		        data-endspeed="300"
-		        data-endeasing="Power1.easeIn"
-		        data-captionhidden="off"
-		        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Merriweather', sans-serif; font-size: 33px; font-style: italic;"><span>Memorable</span>
-		      </div>
-		      <!-- LAYER NR. 2 -->
-		      <div class="tp-caption tp-resizeme sft"
-		        data-x="730"
-		        data-y="150"
-		        data-speed="1000"
-		        data-start="2400"
-		        data-easing="Power4.easeOut"
-		        data-endspeed="300"
-		        data-endeasing="Power1.easeIn"
-		        data-captionhidden="off"
-		        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;font-family : 'Playball', sans-serif;font-size: 91px; letter-spacing: 3px; color: #fff;">Experience
-		      </div>
-
-		      <!-- LAYER NR. 3 -->
-		      <div class="tp-caption tp-resizeme sft"
-		        data-x="705"
-		        data-y="219"
-		        data-speed="1000"
-		        data-start="2700"
-		        data-easing="Power4.easeOut"
-		        data-endspeed="300"
-		        data-endeasing="Power1.easeIn"
-		        data-captionhidden="off"
-		        style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;  font-family: 'Roboto', sans-serif;text-transform: uppercase; font-size: 16px;letter-spacing: 3px; color: #fff;">with impeccable service and great food
-		    </div>
-		      <!-- LAYER NR. 4 -->
-		      <div class="tp-caption tp-resizeme sft"
-		        data-x="820"
-		        data-y="270"
-		        data-speed="1000"
-		        data-start="3000"
-		        data-easing="Power3.easeInOut"
-		        data-splitin="none"
-		        data-splitout="none"
-		        data-elementdelay="0.1"
-		        data-endelementdelay="0.1"
-		        data-linktoslide="next"
-		        style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='{{ url('produk') }}' class='tr-slider-btn'>{{ __('Lihat Menu Kami') }}</a>
-              </div>
-		   </li>
-			</ul>
-
+	        </ul>
 			<div class="tp-bannertimer"></div>
 		</div>
 	</div>
@@ -312,6 +265,7 @@ div.relative {
 <section class="welcome-area">
   <div class="container">
     <div class="row">
+
       <div class="col-xs-12 col-md-4">
         <div class="welcome-note text-center">
           <h1>Selamat Datang</h1>
@@ -326,40 +280,22 @@ div.relative {
       </div>
 
        <div class="col-xs-12 col-md-8">
-          <div class="col-xs-12 col-sm-6 col-md-6 ">
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="grid">
               <figure class="effect-cheff">
-                <img class="img-responsive" src="assets/img/4.png" alt="Food Welcome 1"/>
+                <img class="img-responsive demo-img penci-image-holder penci-lazy" src="{{ asset('assets/img/3.png') }}" alt="Waroeng SS">
                 <div class="relative" style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>READ MORE</a>
                 </div>
               </figure>
             </div>
           </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-6 ">
+        <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="grid">
               <figure class="effect-cheff">
-                <img class="img-responsive" src="assets/img/4.png" alt="Food Welcome 1"/>
-                <div class="relative" style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>READ MORE</a>
-                </div>
-              </figure>
-            </div>
-          </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-6 ">
-            <div class="grid">
-              <figure class="effect-cheff">
-                <img class="img-responsive" src="assets/img/4.png" alt="Food Welcome 1"/>
-                <div class="relative" style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>READ MORE</a>
-                </div>
-              </figure>
-            </div>
-          </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-6 ">
-            <div class="grid">
-              <figure class="effect-cheff">
-                <img class="img-responsive" src="assets/img/4.png" alt="Food Welcome 1"/>
+                <img class="img-responsive" src="{{ asset('assets/img/4.png') }}" alt="Waroeng SS 1">
                 <div class="relative" style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>READ MORE</a>
                 </div>
               </figure>
@@ -368,8 +304,34 @@ div.relative {
 
         </div>
 
+        <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 column-margin clear-left">
+            <div class="grid">
+              <figure class="effect-cheff">
+                <img class="img-responsive" src="{{ asset('assets/img/1.png') }}" alt="Waroeng SS 2">
+                <div class="relative" style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>READ MORE</a>
+                </div>
+              </figure>
+            </div>
+          </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 column-margin">
+            <div class="grid">
+              <figure class="effect-cheff">
+                <img class="img-responsive" src="{{ asset('assets/img/2.png') }}" alt="Waroeng SS 3"/>
+                <div class="relative" style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='tr-slider-btn'>READ MORE</a>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        </div>
       </div>
-    </div>
+    </div><br>
+        <div id="animated-example" class="read-more pull-right animated bounce">
+            <a class="text-right" href="#">lihat selengkapnya... <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
 </section>
 
 
@@ -382,13 +344,13 @@ div.relative {
     <div class="container">
       <div class="row">
       <div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
-        <h1>Pelayanan Kami</h1>
+        <h1>info huuhaah</h1>
         <p class="slogan">Fresh, Made By Order </p>
           <ul id="myTab" class="nav nav-tabs">
-            <li><a href="#tab-features" data-toggle="tab" aria-expanded="true"><i class="fa fa-wifi"></i><br>Tanpa Wifi</a></li>
-            <li class="active"><a href="#extra" data-toggle="tab" aria-expanded="false"><i class="fa fa-taxi"></i><br>Free Parking</a></li>
-            <li><a href="#home-delivery" data-toggle="tab" aria-expanded="false"><i class="fa fa-bicycle"></i><br>Home Delivery</a></li>
-            <li><a href="#custom" data-toggle="tab" aria-expanded="false"><i class="fa fa-cubes"></i><br>Play ground</a></li>
+            <li class="active"><a href="#tab-features" data-toggle="tab" aria-expanded="true"><i class="fa fa-wifi"></i><br>Tanpa Wifi</a></li>
+            <li><a href="#extra" data-toggle="tab" aria-expanded="false"><i class="fa fa-taxi"></i><br>smoking</a></li>
+            <li><a href="#home-delivery" data-toggle="tab" aria-expanded="false"><i class="fa fa-bicycle"></i><br>Booking</a></li>
+            <li><a href="#custom" data-toggle="tab" aria-expanded="false"><i class="fa fa-cubes"></i><br>Menu Pedas</a></li>
           </ul><div class="panel-group visible-xs" id="myTab-accordion"></div>
           <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade" id="tab-features">
@@ -405,7 +367,7 @@ div.relative {
               <div class="row">
                 <div class="col-xs-12 col-md-10 col-md-offset-1">
                   <h2><a href="#">We have a safe and secured play area</a></h2>
-                  <p> Enjoy your dining experience knowing that your children are safe and secure in our playground. We have an array of children's toys to keep them busy while you dine...</p>
+                  <p> Enjoy your dining experience knowing that your children are safe and secure in our playground. We have an array of childrens toys to keep them busy while you dine...</p>
                   <a class="btn btn-default btn-link" href="#" role="button">view more</a>
                 </div>
               </div>
@@ -414,7 +376,7 @@ div.relative {
               <div class="row">
                 <div class="col-xs-12 col-md-10 col-md-offset-1">
                   <h2><a href="#">We have valet parking facilities</a></h2>
-                  <p>Urbangrill provides its customers with valet parking facilities that contribute to a positive overall dining experience. This way you don't have to waste time looking for a parking space...</p>
+                  <p>Urbangrill provides its customers with valet parking facilities that contribute to a positive overall dining experience. This way you dont have to waste time looking for a parking space...</p>
                   <a class="btn btn-default btn-link" href="#" role="button">view more</a>
                 </div>
               </div>
@@ -441,8 +403,8 @@ div.relative {
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h1>food menu</h1>
-          <p class="slogan">fresh and healthy food available</p>
+          <h1>menu huuhaah</h1>
+          <p class="slogan">daftar menu waroeng SS</p>
         </div>
       </div>
 
@@ -533,37 +495,12 @@ div.relative {
   <div class="container">
     <div class="row">
         <div class="col-xs-12">
-          <h1>event</h1>
-          <p class="slogan">fresh and healthy food available</p>
+          <h1>berita huuhaah</h1>
+          <p class="slogan">berita seputar waroeng SS</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
-          <div class="join-event comingevent">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                <a href="events-details.html"><img src="http://placehold.it/360x450" alt="Blog 01"></a>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <div class="content-holder">
-                <p class="upcoming">Upcoming Event</p>
-                <h2><a href="events-details.html">live concert 2015</a></h2>
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos suscipit earum voluptas aliquam recusandae, quae iure adipisci.</P>
-                <p id="countdown">CountDown</p>
 
-                <address>
-                  <strong>Place: </strong>
-                  Hall of Frame
-                  <br>
-                  <strong>Date & Time: </strong>
-                  12 Oct 2015 &nbsp07:30:29
-                </address>
-                <a class="btn btn-imfo btn-read-more" href="events-details.html">Read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
           <div class="single-event">
             <a href="events-details.html"><img src="http://placehold.it/320x200" alt="Blog 02"></a>
@@ -576,6 +513,24 @@ div.relative {
                   <br>
                   <strong>Date & Time: </strong>
                   14 Oct 2015 &nbsp07:30:29
+                </address>
+                <a class="btn btn-imfo btn-read-more" href="events-details.html">Read more</a>
+                </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="single-event">
+            <a href="events-details.html"><img src="http://placehold.it/320x200" alt="Blog 03"></a>
+            <div class="content-holder">
+            <h2><a href="events-details.html">BIUB convocation</a></h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
+                <address>
+                  <strong>Place: </strong>
+                  Hall of Frame
+                  <br>
+                  <strong>Date & Time: </strong>
+                  16 Oct 2015 &nbsp07:30:29
                 </address>
                 <a class="btn btn-imfo btn-read-more" href="events-details.html">Read more</a>
                 </div>
@@ -598,32 +553,63 @@ div.relative {
                 </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
-          <div class="join-event">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                <a href="events-details.html"><img src="http://placehold.it/360x450" alt="Blog 04"></a>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <div class="content-holder">
-                <h2><a href="events-details.html">HSCP Seminar 2015</a></h2>
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos suscipit earum voluptas aliquam recusandae, quae iure adipisci, inventore quia, quos delectus quaerat praesentium id expedita nihil illo accusantium, tempora.</p>
-                <p class="hidden-sm">Labore eos suscipit earum voluptas aliquam recusandae, quae iure adipisci, inventore quia, quos delectus quaerat praesentium id expedita nihil illo accusantium, tempora.</P>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="single-event">
+            <a href="events-details.html"><img src="http://placehold.it/320x200" alt="Blog 03"></a>
+            <div class="content-holder">
+            <h2><a href="events-details.html">BIUB convocation</a></h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
                 <address>
                   <strong>Place: </strong>
-                  Hall of Vinch
+                  Hall of Frame
                   <br>
                   <strong>Date & Time: </strong>
-                  18 Oct 2015 &nbsp07:30:29
+                  16 Oct 2015 &nbsp07:30:29
                 </address>
                 <a class="btn btn-imfo btn-read-more" href="events-details.html">Read more</a>
                 </div>
-              </div>
-            </div>
           </div>
         </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="single-event">
+            <a href="events-details.html"><img src="http://placehold.it/320x200" alt="Blog 03"></a>
+            <div class="content-holder">
+            <h2><a href="events-details.html">BIUB convocation</a></h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
+                <address>
+                  <strong>Place: </strong>
+                  Hall of Frame
+                  <br>
+                  <strong>Date & Time: </strong>
+                  16 Oct 2015 &nbsp07:30:29
+                </address>
+                <a class="btn btn-imfo btn-read-more" href="events-details.html">Read more</a>
+                </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="single-event">
+            <a href="events-details.html"><img src="http://placehold.it/320x200" alt="Blog 03"></a>
+            <div class="content-holder">
+            <h2><a href="events-details.html">BIUB convocation</a></h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
+                <address>
+                  <strong>Place: </strong>
+                  Hall of Frame
+                  <br>
+                  <strong>Date & Time: </strong>
+                  16 Oct 2015 &nbsp07:30:29
+                </address>
+                <a class="btn btn-imfo btn-read-more" href="events-details.html">Read more</a>
+                </div>
+          </div>
+        </div>
+
       </div>
-  </div>
+  </div><br>
+        <div id="animated-example" class="read-more pull-right animated bounce">
+            <a class="text-right" href="#" style="font-size: 14px">lihat selengkapnya... <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
 </section>
 <!--===| Event End|===-->
 
@@ -632,26 +618,26 @@ div.relative {
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-        <h1>Customer says</h1>
+        <h1>Kata konsumen</h1>
         <div id="testimonial" class="carousel slide carousel-fade" data-ride="carousel">
 
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="http://placehold.it/100x100" alt="testimonial 01">
+              <img src="{{ asset('assets/img/pak_yok2.png') }}" alt="testimonial 01">
 
               <p>I loved the ambiance and the decor at urbangrill. Their service is really awesome. I will recommend this place to my friends and will come back for sure</p>
               <blockquote> oni Perry</blockquote>
             </div>
             <div class="item">
-              <img src="http://placehold.it/100x100" alt="testimonial 02">
+              <img src="{{ asset('assets/img/pak_yok1.png') }}" alt="testimonial 02">
 
               <p>I loved the seafood menu. The sauces were delicious. And my kids had a lovely time at the play area while we ordered. Keep up the good work!”</p>
               <blockquote> steve john</blockquote>
             </div>
             <div class="item">
-              <img src="http://placehold.it/100x100" alt="testimonial 03">
+              <img src="{{ asset('assets/img/logo-header.png') }}" alt="testimonial 03">
 
               <p>I needed a place for a corporate event at the very last minute and urbangrill was so cooperative. Our event was a huge success and all the credit goes to the urbangrill management and support staff. Thank you</p>
               <blockquote> Lisa morgan</blockquote>
@@ -677,45 +663,46 @@ div.relative {
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h1>signature dishes</h1>
-          <p class="slogan">fresh and healthy food available</p>
+          <h1>galeri & Info waroeng</h1>
+          <p class="slogan">info waroeng cabang terkini Mr. Huuhaah</p>
         </div>
       </div>
       <div class="row">
          <div class="col-xs-12">
            <div class="owl-wrap">
             <div id="owl-dishes" class="owl-carousel">
+
               <div class="feature-image">
-                    <img src="http://placehold.it/264x174" alt="Signature Dishes 01">
-                    <h2>orange beef</h2>
-                    <p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p>
-                    <p class="price">price: <span>$135</span></p>
+                    <img src="{{ asset('assets/img/icon.jpg') }}" alt="Signature Dishes 01">
+                    <h2>SS Palagan | Yogyakarta</h2>
+                    <p>Waroeng SS Palagan dibuka pada tahun 2015, terletak di Jl. Palagan tentara pelajar.</p>
+                    <p class="price"><a href="#" style="color: darkred"><i class="fa fa-info-circle"></i> selengkapnya <span><i class="fa fa-arrow-circle-right"></i></span></a></p>
               </div>
 
               <div class="feature-image">
-                <img src="http://placehold.it/264x174" alt="Signature Dishes 02">
+                <img src="{{ asset('assets/img/2.png') }}" alt="Signature Dishes 02">
                 <h2>chicken for two roasted</h2>
                 <p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p>
-                <p class="price">price: <span>$135</span></p>
+                <p class="price"><a href="#" style="color: darkred"><i class="fa fa-info-circle"></i> selengkapnya <span><i class="fa fa-arrow-circle-right"></i></span></a></p>
               </div>
               <div class="feature-image">
-                  <img src="http://placehold.it/264x174" alt="Signature Dishes 03">
+                  <img src="{{ asset('assets/img/1.png') }}" alt="Signature Dishes 03">
                   <h2>black cod with miso</h2>
                   <p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p>
-                  <p class="price">price: <span>$135</span></p>
+                  <p class="price"><a href="#" style="color: darkred"><i class="fa fa-info-circle"></i> selengkapnya <span><i class="fa fa-arrow-circle-right"></i></span></a></p>
               </div>
 
                <div class="feature-image">
-                    <img src="http://placehold.it/264x174" alt="Signature Dishes 01">
+                    <img src="{{ asset('assets/img/3.png') }}" alt="Signature Dishes 01">
                     <h2>orange beef</h2>
                     <p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p>
-                    <p class="price">price: <span>$135</span></p>
+                    <p class="price"><a href="#" style="color: darkred"><i class="fa fa-info-circle"></i> selengkapnya <span><i class="fa fa-arrow-circle-right"></i></span></a></p>
               </div>
               <div class="feature-image">
-                <img src="http://placehold.it/264x174" alt="Signature Dishes 02">
+                <img src="{{ asset('assets/img/4.png') }}" alt="Signature Dishes 02">
                 <h2>chicken for two roasted</h2>
                 <p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p>
-                <p class="price">price: <span>$135</span></p>
+                <p class="price"><a href="#" style="color: darkred"><i class="fa fa-info-circle"></i> selengkapnya <span><i class="fa fa-arrow-circle-right"></i></span></a></p>
               </div>
            </div><!-- /.owl-carousel -->
             <div class="owl-controls">
@@ -725,6 +712,11 @@ div.relative {
           </div><!-- /.owl-wrap -->
          </div>
       </div>
+
+        <div id="animated-example" class="read-more pull-right animated bounce">
+            <a class="text-right" href="#" style="font-size: 14px">lihat semua waroeng... <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+
     </div>
   </section>
   <!--====| End Signature Dishes End|====-->
@@ -734,120 +726,88 @@ div.relative {
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h1>gallery</h1>
-          <p class="slogan">fresh and healthy food available</p>
+          <h1>galeri kami</h1>
+          <p class="slogan">galeri foto dan video kami</p>
         </div>
       </div>
-      <div class="row">
+    <div class="row">
+        <div class="gallery-trigger">
+          <ul id="filter">
+           <li><a href="#" data-group="foto">Foto</a></li>
+           <li><a href="#" data-group="video">Video</a></li>
+           <li><a class="active" href="#" data-group="semua">Semua</a></li>
+         </ul>
+       </div>
+
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <div class="row">
-            <div class="col-xs-12 col-md-12">
-            <div class="grid">
-              <figure class="effect-cheff gallary-image">
-                <img src="http://placehold.it/571x200" alt="Gallery 01"/>
-                <figcaption>
-                  <div class="gallary-hover-text">
-                    <a class="yellow-bar fancybox" href="img/gallery-demo.jpg" data-fancybox-group="gallery"><i class="fa fa-plus"></i></a>
-                  <p>chicken seasoned with herbs</p>
-                  </div>
-                </figcaption>
-              </figure>
+            <div class="row">
+
+                <div class="col-xs-12 col-md-6">
+                    <div class="grid">
+                        <figure class="effect-cheff gallary-image">
+                         <img src="{{ asset('assets/img/icon.jpg') }}" alt="Gallery 02">
+                        <figcaption>
+                        <div class="gallary-hover-text">
+                            <a class="yellow-bar video" href="{{ 'https://www.youtube.com/watch?v=-S1PqvTOgA4?fs=1&amp;autoplay=1' }}" ><i class="fa fa-play"></i></a>
+                            <p>chicken seasoned with Youtube Video</p>
+                        </div>
+                        </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-6">
+                    <div class="grid">
+                        <figure class="effect-cheff gallary-image">
+                        <img src="{{ asset('assets/img/2.png') }}" alt="Gallery 05">
+                        <figcaption>
+                        <div class="gallary-hover-text">
+                            <a class="yellow-bar fancybox" href="{{ asset('assets/img/2.png') }}" data-fancybox-group="gallery"><i class="fa fa-plus"></i></a>
+                            <p>chicken seasoned with herbs</p>
+                        </div>
+                        </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
             </div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-            <div class="grid">
-              <figure class="effect-cheff gallary-image">
-                 <img src="http://placehold.it/269x200" alt="Gallery 02">
-                  <figcaption>
-                   <div class="gallary-hover-text">
-                    <a class="yellow-bar video" href="http://www.youtube.com/v/d9yxuVjddzo?fs=1&amp;autoplay=1" ><i class="fa fa-play"></i></a>
-                  <p>chicken seasoned with Youtube Video</p>
-                  </div>
-                  </figcaption>
-              </figure>
-            </div>
-            <div class="grid">
-              <figure class="effect-cheff gallary-image">
-                <img src="http://placehold.it/269x200" alt="Gallery 03">
-                <figcaption>
-                  <div class="gallary-hover-text">
-                    <a class="yellow-bar fancybox" href="img/gallery-demo.jpg" data-fancybox-group="gallery"><i class="fa fa-plus"></i></a>
-                  <p>chicken seasoned with herbs</p>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-                <div class="grid">
-              <figure class="effect-cheff gallary-image">
-                 <img src="http://placehold.it/269x429" alt="Gallery 04">
-                <figcaption class="figure-class">
-                  <div class="gallary-hover-text">
-                    <a class="yellow-bar fancybox" href="img/gallery-demo.jpg" data-fancybox-group="gallery"><i class="fa fa-plus"></i></a>
-                  <p>chicken seasoned with herbs</p>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
-            </div>
-          </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
-          <div class="row">
-            <div class="col-xs-12 col-md-6">
-            <div class="grid">
-              <figure class="effect-cheff gallary-image">
-                 <img src="http://placehold.it/269x200" alt="Gallery 05">
-                <figcaption>
-                  <div class="gallary-hover-text">
-                    <a class="yellow-bar fancybox" href="img/gallery-demo.jpg" data-fancybox-group="gallery"><i class="fa fa-plus"></i></a>
-                  <p>chicken seasoned with herbs</p>
-                  </div>
-                </figcaption>
-              </figure>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="row">
+
+                <div class="col-xs-12 col-md-6">
+                    <div class="grid">
+                        <figure class="effect-cheff gallary-image">
+                         <img src="{{ asset('assets/img/icon.jpg') }}" alt="Gallery 02">
+                        <figcaption>
+                        <div class="gallary-hover-text">
+                            <a class="yellow-bar video" href="{{ 'https://www.youtube.com/watch?v=-S1PqvTOgA4?fs=1&amp;autoplay=1' }}" ><i class="fa fa-play"></i></a>
+                            <p>chicken seasoned with Youtube Video</p>
+                        </div>
+                        </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-6">
+                    <div class="grid">
+                        <figure class="effect-cheff gallary-image">
+                        <img src="{{ asset('assets/img/3.png') }}" alt="Gallery 06">
+                        <figcaption>
+                        <div class="gallary-hover-text">
+                            <a class="yellow-bar fancybox" href="{{ asset('assets/img/3.png') }}" data-fancybox-group="gallery"><i class="fa fa-plus"></i></a>
+                            <p>chicken seasoned with herbs</p>
+                        </div>
+                        </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
             </div>
-            <div class="grid">
-              <figure class="effect-cheff gallary-image">
-                 <img src="http://placehold.it/269x200" alt="Gallery 06">
-                <figcaption>
-                 <div class="gallary-hover-text">
-                    <a class="yellow-bar fancybox" href="img/gallery-demo.jpg" data-fancybox-group="gallery"><i class="fa fa-plus"></i></a>
-                  <p>chicken seasoned with herbs</p>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <div class="grid">
-              <figure class="effect-cheff gallary-image">
-                 <img src="http://placehold.it/269x429" alt="Gallery 07">
-                <figcaption class="figure-class">
-                  <div class="gallary-hover-text">
-                    <a class="yellow-bar fancybox" href="img/gallery-demo.jpg" data-fancybox-group="gallery"><i class="fa fa-plus"></i></a>
-                  <p>chicken seasoned with herbs</p>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
-            </div>
-            <div class="col-xs-12 col-md-12">
-              <div class="grid">
-              <figure class="effect-cheff gallary-image">
-                 <img src="http://placehold.it/573x200" alt="Gallery 08">
-                <figcaption>
-                  <div class="gallary-hover-text">
-                    <a class="yellow-bar fancybox" href="img/gallery-demo.jpg" data-fancybox-group="gallery"><i class="fa fa-plus"></i></a>
-                  <p>chicken seasoned with herbs</p>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
-            </div>
-          </div>
         </div>
-      </div>
+
+    </div>
     </div>
   </section>
   <!--====| Gallery End |====-->

@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/adminproduklayanan",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\AdminProduklayanan\\Providers\\AdminProduklayananServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\AdminProduklayanan\\": ""
+        }
+    }
+}

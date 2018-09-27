@@ -1,19 +1,6 @@
-@extends('layouts.fronted')
-@section('title', 'Visi dan Misi Waroeng SS')
-@section('content')
+@extends('home::layouts.master')
 
-<!--===| Reservation Banner Start|===-->
-<div class="banner-wrapper reservation-banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>Visi & Misi</h1>
-          <p>Waroeng Spesial Sambal SS</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--===| Reservation Banner end|===-->
+@section('isi')
 
   <!--==| Reservation Top Section Start |==-->
   <section class="section-padding reservation-top-section">

@@ -14,30 +14,94 @@ class BeritaController extends Controller
      * Display a listing of the resource.
      * @return Response
      */
-    public function index()
+    public function berita()
     {
+        $title      = 'Berita Seputar Waroeng SS';
+        $judul      = 'Berita Perusahaan';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
 
-        return view('berita::berita');
+        return view('berita::berita', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
+    }
+
+    public function detailberita()
+    {
+        $title      = 'Berita Seputar Waroeng SS';
+        $judul      = 'Berita Perusahaan';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('berita::detailberita.berita', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     public function dansos()
     {
-        return view('berita::dansos');
+        $title      = 'Penyaluran Dana Sosial (CSR) dan Genggam Jemari Indonesia Waroeng SS';
+        $judul      = 'Penyaluaran Dana Sosial (CSR)';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('berita::dansos', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
+    }
+
+    public function detaildansos()
+    {
+        $title = 'Penyaluran Dana Sosial (CSR) dan Genggam Jemari Indonesia Waroeng SS';
+        $judul = 'Penyaluaran Dana Sosial (CSR)';
+        $subjudul = 'Waroeng Spesial Sambal SS';
+
+        return view('berita::detaildansos.dansos', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     public function produk()
     {
-        return view('berita::produk');
+        $title      = 'Produk dan Layanan Waroeng SS';
+        $judul      = 'Promosi Produk & Layanan';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('berita::produk', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
+    }
+
+    public function detailproduk()
+    {
+        $title = 'Produk dan Layanan Waroeng SS';
+        $judul = 'Promosi Produk & Layanan';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('berita::detailproduk.produk', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     public function event()
     {
-        return view('berita::event');
+        $title      = 'Event - Event Kerjasama Khusus Waroeng SS';
+        $judul      = 'Event Kerjasama Khusus';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('berita::event', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
+    }
+
+    public function detailevent()
+    {
+        $title      = 'Event - Event Kerjasama Khusus Waroeng SS';
+        $judul      = 'Event Kerjasama Khusus';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('berita::detailevent.event', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     public function buletin()
     {
-        return view('berita::buletin');
+        $title      = 'Berita Nikmat Waroeng SS';
+        $judul      = 'Berita Nikmat';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('berita::buletin', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
+    }
+
+    public function detailbuletin()
+    {
+        $title      = 'Berita Nikmat Waroeng SS';
+        $judul      = 'Berita Nikmat';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('berita::detailbuletin.buletin', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     /**

@@ -1,0 +1,16 @@
+{
+    "name": "AdminMedsil",
+    "alias": "adminmedsil",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\AdminMedsil\\Providers\\AdminMedsilServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

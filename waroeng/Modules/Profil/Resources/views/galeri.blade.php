@@ -1,21 +1,6 @@
-@extends('layouts.fronted')
-@section('title', 'Galeri Waroeng SS')
-@section('content')
+@extends('home::layouts.master')
 
-<script src="{{ asset('assets/loadmore/jquery.min.js') }}"></script>
-<script src="{{ asset('assets/loadmore/bootstrap.min.js') }}"></script>
-  <!--===| About Us Banner Start|===-->
-  <section class="banner-wrapper about-banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>Galery Waroeng</h1>
-          <p>Waroeng Spesial Sambal SS</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--===| About Us Banner End|===-->
+@section('isi')
 
   <!--===| Our Team Start|===-->
   <section class="section-padding our-team-section">
@@ -132,24 +117,9 @@
     </div>
   </section>
   <!--===| Our Team End|===-->
-<!--===| Testimonial Start|===-->
-
-<!--===| Testimonial End|===-->
-
-<script>
-$( document ).ready(function () {
-		$(".moreBox").slice(0, 3).show();
-		if ($(".blogBox:hidden").length != 0) {
-			$("#loadMore").show();
-		}
-		$("#loadMore").on('click', function (e) {
-			e.preventDefault();
-			$(".moreBox:hidden").slice(0, 3).slideDown();
-			if ($(".moreBox:hidden").length == 0) {
-				$("#loadMore").fadeOut('slow');
-			}
-		});
-	});
-</script>
-
+  
 @endsection
+
+
+
+

@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/adminprofil",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\AdminProfil\\Providers\\AdminProfilServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\AdminProfil\\": ""
+        }
+    }
+}

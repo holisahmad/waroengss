@@ -12,9 +12,10 @@
   {{--  <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.ico') }}">  --}}
 
   {{-- <!-- Fonts --> --}}
-  <link href='{{ asset('assets/css/googlefont1.css') }}' rel='stylesheet' type='text/css'>
-  <link href='{{ asset('assets/css/googlefont2.css') }}' rel='stylesheet' type='text/css'>
-  <link href='{{ asset('assets/css/googlefont3.css') }}' rel='stylesheet' type='text/css'>
+  <link href="{{ asset('assets/css/googlefont1.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('assets/css/googlefont2.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('assets/css/googlefont3.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('assets/css/googlefont4.css') }}" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/style.css') }}" media="screen">
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}" media="screen">
@@ -33,6 +34,7 @@
 
 <body onload="initialize()">
  <div class="loader"></div>
+
  {{-- <!--===| Search Start |===--> --}}
  <div class="search-wrapper">
    <div class="search-container">

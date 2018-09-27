@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/adminberitanikmat",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\AdminBeritanikmat\\Providers\\AdminBeritanikmatServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\AdminBeritanikmat\\": ""
+        }
+    }
+}

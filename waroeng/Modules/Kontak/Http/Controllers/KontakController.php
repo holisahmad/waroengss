@@ -14,42 +14,65 @@ class KontakController extends Controller
      */
     public function index()
     {
-        return view('kontak::index');
+        $title      = 'Kontak dan Alamat Waroeng SS';
+        $judul      = 'Kontak';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('kontak::index', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     public function bahanbaku()
     {
-        return view('kontak::bahanbaku');
+        $title      = 'Kontak Kerjasama Pengadaan Bahan Baku Waroeng SS';
+        $judul      = 'Kontak Pengadaan Bahan Baku';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('kontak::bahanbaku', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     public function konsinyasi()
     {
-        return view('kontak::konsinyasi');
+        $title      = 'Kontak Kerjasama Produk Konsinyasi Waroeng SS';
+        $judul      = 'Kontak Produk Konsinyasi';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('kontak::konsinyasi', ['title'=>$title, 'judul'=>$judul, 'subjudul' => $subjudul]);
     }
 
-    public function kerjasamaevent()
+    public function eventsponsorship()
     {
-        return view('kontak::kerjasamaevent');
+        $title      = 'Kontak Kerjasama Event Waroeng SS';
+        $judul      = 'Kontak Kerjasama Event';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('kontak::eventsponsorship', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     public function hotlineservice()
     {
-        return view('kontak::hotlineservice');
+        $title      = 'Hotline Service - Komplain Waroeng SS';
+        $judul      = 'Hotline Service (Komplain)';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('kontak::hotlineservice', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     public function hotlineorder()
     {
-        return view('kontak::hotlineorder');
-    }
+        $title      = 'Hotline Order Menu Waroeng SS';
+        $judul      = 'Hotline Order';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
 
-    public function sponsorship()
-    {
-        return view('kontak::sponsorship');
+        return view('kontak::hotlineorder', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     public function cabang()
     {
-        return view('kontak::kantorcabang');
+        $title      = 'Kontak Kantor Pusat dan Cabang Waroeng SS';
+        $judul      = 'Kontak Kantor Pusat & Cabang';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('kontak::kantorcabang', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     /**

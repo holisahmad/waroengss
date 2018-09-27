@@ -14,27 +14,49 @@ class ProfilController extends Controller
      */
     public function sejarah()
     {
-        return view('profil::sejarah');
+        $title      = 'Sejarah dan Perkembangan Waroeng SS';
+        $judul      = 'Sejarah Kami';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('profil::sejarah', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
+
     }
 
     public function misi()
     {
-        return view('profil::misi');
+        $title      = 'Visi dan Misi Waroeng SS';
+        $judul      = 'Visi & Misi';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('profil::misi', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
+
     }
 
     public function profil()
     {
-        return view('profil::profil');
+        $title      = 'Profil Waroeng SS';
+        $judul      = 'Profil Perusahaan';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('profil::profil', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     public function jajaran()
     {
-        return view('profil::jajaran');
+        $title      = 'Jajaran Tinggi Manajemen Waroeng SS';
+        $judul      = 'Jajaran Tinggi Manajemen';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('profil::jajaran', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     public function galeri()
     {
-        return view('profil::galeri');
+        $title      = 'Galeri dan Info Waroeng SS';
+        $judul      = 'Galeri Huuhaah';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('profil::galeri', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
     }
 
     /**

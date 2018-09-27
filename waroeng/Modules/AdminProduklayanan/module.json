@@ -1,0 +1,16 @@
+{
+    "name": "AdminProduklayanan",
+    "alias": "adminproduklayanan",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\AdminProduklayanan\\Providers\\AdminProduklayananServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

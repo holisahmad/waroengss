@@ -14,7 +14,23 @@ class KeluargaController extends Controller
      */
     public function index()
     {
-        return view('keluarga::index');
+        $title      = 'Media Silaturrahim Waroeng SS';
+        $judul      = 'Keluarga Penebar Pedas';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('keluarga::index', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
+
+    }
+
+    public function data1()
+    {
+        $title      = 'Medsil - Penyaluran dana sosial melalui Genggam Jemari Indonesia di Lombok NTB';
+        $judul      = 'Media Silaturrahmi';
+        $subjudul   = 'Waroeng Spesial Sambal SS';
+
+        return view('keluarga::detailkeluarga.index', ['title' => $title, 'judul' => $judul, 'subjudul' => $subjudul]);
+
+
     }
 
     /**

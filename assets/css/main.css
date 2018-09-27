@@ -1,6 +1,7 @@
 /**********************************************************************
 ***********************************************************************
     Theme Name: UrbanGrill
+    Theme Name: UrbanGrill
     Theme URI: http://themerole.com/demo/urbangrill/
     Description: The Multi-Purpose Template
     Author: ThemeRole
@@ -204,13 +205,13 @@ h6,
 
 h1 {
     color: #c69e59;
-    font-family: 'Playball', sans-serif;
+    font-family: 'Kalam', cursive;
     font-size: 50px;
     text-transform: capitalize;
 }
 
 h2 {
-    font-family: 'Playball', sans-serif;
+    font-family: 'Kalam', cursive;
     font-size: 40px;
     text-transform: capitalize;
     color: #a87f41;
@@ -366,8 +367,10 @@ video {
 }
 
 .header-wrapper.navbar-fixed-top .logo a img {
-    width: 140px;
-    height: 42px;
+    width: 52px;
+    height: 52px;
+    /* width: 140px;
+    height: 42px; */
     padding-top: 5px;
 }
 
@@ -386,7 +389,8 @@ NAVIGATION
 -------------------------------------*/
 
 .logo {
-    max-width: 200px;
+    max-width: 100px;
+    /* max-width: 200px; */
     min-height: 100px;
     position: absolute;
     left: 15px;
@@ -1424,7 +1428,8 @@ label.error {
 }
 
 .welcome-note.text-center {
-    padding: 90px 55px 76px 55px;
+    padding: 40px 35px 76px 35px;
+    /* padding: 90px 55px 76px 55px; */
     border-bottom: 3px solid #C4A97F;
     border-top: 3px solid #c4a97f;
 }
@@ -2995,7 +3000,8 @@ footer .footer-text {
 /*--- ABOUT US ---*/
 
 .about-banner {
-    background-image: url('http://placehold.it/1600x339');
+    background-image: url('../img/banner.jpg');
+    background-image: url('../img/banner.jpg');
 }
 
 .about-banner h1 {
@@ -3150,7 +3156,7 @@ footer .footer-text {
 ****************************************************************/
 
 .menu-banner {
-    background-image: url('http://placehold.it/1600x339');
+    background-image: url('../img/banner.jpg');
 }
 
 .banner-wrapper {
@@ -3243,7 +3249,7 @@ footer .footer-text {
 ****************************************************************************/
 
 .events-banner {
-    background-image: url('http://placehold.it/1600x339');
+    background-image: url('../img/banner.jpg');
 }
 
 .event-contents-wrapper {
@@ -3500,7 +3506,7 @@ footer .footer-text {
 ***********************************************************/
 
 .reservation-banner {
-    background-image: url('http://placehold.it/1600x339');
+    background-image: url('../img/banner.jpg');
 }
 
 .reservation-top-section .carousel-indicators {
@@ -3641,7 +3647,7 @@ footer .footer-text {
 ***********************************************************/
 
 .contact-banner {
-    background-image: url('http://placehold.it/1600x339');
+    background-image: url('../img/banner.jpg');
 }
 
 .contact-wrapper {
@@ -3826,7 +3832,7 @@ footer .footer-text {
 }
 
 .gallery-banner {
-    background-image: url('http://placehold.it/1600x339');
+    background-image: url('../img/banner.jpg');
 }
 
 .gallery-banner h1 {
